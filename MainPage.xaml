@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"            
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:controls="clr-namespace:FlowerApp2.Controls"
+             x:Class="FlowerApp2.MainPage">
+
+
+    <controls:StackPanel HorizontalOptions="StartAndExpand" WidthRequest="2500" HeightRequest="2000">
+
+        <Label x:Name="label1" WidthRequest="2000" BackgroundColor="Navy" HorizontalOptions="StartAndExpand" 
+               VerticalOptions="Start" HeightRequest="100" />
+        <Label x:Name="label2" TextColor="White" BackgroundColor="Transparent" HorizontalOptions="Center" VerticalOptions="Start" 
+               MinimumHeightRequest="400" Text="Flower Mandala" FontFamily="JFont" FontSize="90"/>
+        <Image x:Name="image2" Source="Clip1.png" HorizontalOptions="Center" VerticalOptions="Center" HeightRequest="500" MinimumWidthRequest="500"></Image>
+        <Button x:Name="Button1" ImageSource="circle.png" BackgroundColor="Orange" HorizontalOptions="EndAndExpand" VerticalOptions="FillAndExpand" Clicked="ButtonClicked" WidthRequest="75"
+                Margin="0,0,50,0"/>
+    </controls:StackPanel>
+</ContentPage>
